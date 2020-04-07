@@ -16,5 +16,20 @@ namespace kolko_i_krzyzyk
 
         };
 
+        internal void PlayGame()
+        {
+            Player player = Player.Crosses;
+            bool flaga = true;
+            while (flaga)
+            {
+                DisplayBoard();
+                flaga = PlayMove(player);
+                if (!flaga)
+                {
+                    return;
+                }
+                player = 3 - player;
+            }
+        }
     }
 }

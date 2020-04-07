@@ -10,6 +10,9 @@ namespace kolko_i_krzyzyk
     {
         static void Main(string[] args)
         {
+            TicTacToe ticTacToe = new TicTacToe();
+            ticTacToe.PlayGame();
+            Console.WriteLine("Game over");
         }
     }
 }
