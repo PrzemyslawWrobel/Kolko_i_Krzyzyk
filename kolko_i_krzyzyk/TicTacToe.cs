@@ -31,5 +31,23 @@ namespace kolko_i_krzyzyk
                 player = 3 - player;
             }
         }
+
+        private bool PlayMove(Player player)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void DisplayBoard()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.WriteLine(" " + board[i][j]);
+
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }
